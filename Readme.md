@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ekaterina Sevostianova](https://up.htmlacademy.ru/htmlcss/35/user/2173455).
-* Наставник: `Неизвестно`.
+* Наставник: [Анатолий Долгов](https://htmlacademy.ru/profile/dolgov_anatoly).
 
 ---
 
