@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -14,11 +15,11 @@
 
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="" alt="Логотип «sedona».">
+          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип «sedona».">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
@@ -34,10 +35,14 @@
                     Поиск
                     <input type="search" name="search" required>
                   </label>
+                  <img class="logo" src="images/search.svg" width="44" height="64" alt="поиск">
                 </form>
+
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#"><span class="visually-hidden">Понравилось</span></a>
+                <img src="images/heart.svg" width="18" height="17" alt="heart">
+                <img src="images/circle-likes.svg" width="20" height="20" alt="likes">
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Хочу сюда</a>
@@ -50,14 +55,18 @@
 
     <main>
 
-      <section class="catalog-products">
+      <section class="catalog-filters">
+        <!--удалила фоновую картинку, но она есть в jpg mountains её потом в css надо будет заблюрить и увеличить-->
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
 
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <!--СДЕЛАНО aria-label-->
-            <a class="breadcrumbs-link" href="index.html" aria-label="На главную">Home</a>
+            <img src="images/breadcrumbs-home.svg" width="12" height="12" alt="home">
+            <a class="visually-hidden" href="index.html" aria-label="На главную">Home</a>
           </li>
+          <li>
+            <img src="images/breadcrumbs-cursor.svg" width="6.39" height="9.94" alt="breadcrumbs">
+        </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
@@ -107,8 +116,8 @@
 
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="type" value="luxury-hotel">
-                  Отель
+                  <input class="control-input" type="radio" name="type" value="motel">
+                  Мотель
                 </label>
               </li>
 
@@ -133,6 +142,7 @@
         <h2>НАЙДЕНО ГОСТИНИЦ: 38</h2>
 
         <select class="select-control" aria-label="Сортировка">
+         <!--удалила отсюда стрелочку,стилизую потом ее через css-->
           <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -140,18 +150,21 @@
 
         <a class="button" href="#">
           <span class="visually-hidden">Показать карточки</span>
+          <img src="images/tile.svg" width="16" height="14" alt="карточки">
         </a>
         <a class="button" href="#">
           <span class="visually-hidden">Плитки-Покарточно-Список</span>
+          <img src="images/tile-list.svg" width="16" height="14" alt="карточки-список">
         </a>
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать список</span>
+          <img src="images/list.svg" width="16" height="14" alt="список">
         </a>
 
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/amara-resort-spa.jpg" width="300" height="212" alt="amara">
               <p class="product-card-title">Amara Resort & Spa</p>
               <p class="product-card-type-hotel">
                 <span>Гостиница</span>
@@ -160,12 +173,25 @@
             </a>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-button button" href="#">В избранное</a>
-          <li>****</li>
+           <ul>
+             <li class="star">
+              *
+             </li>
+             <li class="star">
+              *
+             </li>
+             <li class="star">
+              *
+             </li>
+             <li class="star">
+              *
+             </li>
+           </ul>
           </li>
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/villas-at-poco-diablo.jpg" width="300" height="212" alt="villas">
               <p class="product-card-title">Villas at Poco Diablo</p>
               <p class="product-card-type-hotel">
                 <span>Гостиница</span>
@@ -174,12 +200,25 @@
             </a>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-button button" href="#">В избранном</a>
-          <li>****</li>
+            <ul>
+              <li class="star">
+                *
+              </li>
+              <li class="star">
+                *
+              </li>
+              <li class="star">
+                *
+              </li>
+              <li class="star">
+                *
+              </li>
+             </ul>
           </li>
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/desert-quail-inn.jpg" width="300" height="212" alt="desert">
               <p class="product-card-title">Desert Quail Inn</p>
               <p class="product-card-type-hotel">
                 <span>Гостиница</span>
@@ -188,12 +227,22 @@
             </a>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-button button" href="#">В избранное</a>
-          <li>***</li>
+            <ul>
+              <li class="star">
+                *
+              </li>
+              <li class="star">
+                *
+              </li>
+              <li class="star">
+                *
+              </li>
+             </ul>
           </li>
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/greentree-inn.jpg" width="300" height="212" alt="greentree">
               <p class="product-card-title">GreenTree Inn</p>
               <p class="product-card-type-hotel">
                 <span>Гостиница</span>
@@ -202,7 +251,14 @@
             </a>
             <a class="product-card-button button" href="#">Подробнее</a>
             <a class="product-card-button button" href="#">В избранное</a>
-          <li>**</li>
+            <ul>
+              <li class="star">
+                *
+              </li>
+              <li class="star">
+                *
+              </li>
+             </ul>
           </li>
         </ul>
 
@@ -238,7 +294,7 @@
           <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
             id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
+            <span>Подписаться</span>
           </button>
         </form>
       </section>
@@ -255,18 +311,21 @@
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
+              <img src="images/vk.svg" width="24" height="14" alt="vk">
             </a>
           </li>
 
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм</span>
+              <img src="images/telegram.svg" width="18" height="15.1" alt="telegram">
             </a>
           </li>
 
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
+              <img src="images/youtube.svg" width="22" height="17" alt="youtube">
             </a>
           </li>
 
@@ -277,15 +336,14 @@
       <section class="footer-contact">
         <h2 class="visually-hidden">Телефон</h2>
         <address class="contacts-address">
-          <a class="contact-phone-text">+7 (812) 812-12-12</a>
+          <a class="contact-phone-text" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
         </address>
       </section>
 
-      <a href="https://htmlacademy.ru/">
-        <section>
-          <img class="logo" src="" alt="Логотип «.html academy».">
-        </section>
-      </a>
+      <section>
+        <a href="https://htmlacademy.ru/  "></a>
+        <img class="logo" src="images/html-academy.svg" width="114.9" height="32.9" alt=".html academy»».">
+      </section>
 
     </footer>
   </body>
