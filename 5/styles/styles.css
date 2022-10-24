@@ -1,0 +1,442 @@
+@font-face{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ptsans-400.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ptsans-700.woff2') format('woff2');
+  font-display: swap;
+}
+
+/*мне вообще нужен италик??*/
+
+@font-face{
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  /*но где файл италик*/
+  src: url('../fonts/ptsans-italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  /*но где файл италик*/
+  src: url('../fonts/ptsans-bold-italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+font-size: 16px;
+line-height: 24px;
+
+}
+
+/*этот грей фон это то, что позади frame26 */
+/*.gray-fon{
+  background:#F2F2F2;
+  align-items: flex-start;
+}*/
+
+.page-header{
+  color:#000000;
+  background:#FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  /*точно ли текст алайн по центру?*/
+  text-align: center;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.main-index{
+  color: #000000;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.sedona-city{
+  background-image: url('../images/welcome-kartinka.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.sedona {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sedona-description{
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages{
+text-align: center;
+}
+
+.advantages-title{
+font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+}
+
+.advantages-description{
+  font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+
+.background-basic{
+  background-color:#82B3D3;
+  color: #FFFFFF;
+  background-repeat: repeat;
+  position: absolute;
+}
+
+.background-second-one{
+  background-color:#83B3D3;
+  color: #000000;
+  background-repeat: repeat;
+  position: absolute;
+}
+
+.background-second-two{
+  background-color:#83B3D3;
+  color: #000000;
+  background-repeat: repeat;
+  position: absolute;
+}
+
+.background-none{
+  background-color: none;
+  color: #000000;
+  background-repeat: repeat;
+  position: absolute;
+}
+
+.dates {
+  font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.interest{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-search {
+  background-color: #756157;
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscription{
+  color: #FFFFFF;
+  background-image: url('../images/bridge.jpg');
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscription-index{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.spam-index {
+  font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.newsletter-button {
+  font-family: "PT Sans", sans-serif;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-footer{
+  background-color: #FFFFFF;
+}
+
+.footer-contact{
+  font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+}
+
+
+
+
+
+.main-catalog{
+  color: #000000;
+  background-image: url('../images/mountains.jpg');
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 190% auto;
+}
+
+.inner-header-title {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color: #FFFFFF;}
+
+.breadcrumbs-link {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+}
+
+.catalog-filter-title{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+
+.control{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.button-submit{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #82B3D3;
+}
+
+.button-reset{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: none;
+}
+
+.search-catalog {
+  background-color: #FFFFFF;
+}
+
+.found {
+  font-family: 'PT Sans';
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.select-control{
+  font-family: 'PT Sans';
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+
+.product-card-title {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.product-card-price {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.product-card-button-info {
+  font-family: 'PT Sans';
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+
+.product-card-button-add {
+  font-family: 'PT Sans';
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color:#82B3D3;
+}
+
+.product-card-button-added {
+  font-family: 'PT Sans';
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color:#7DB54F;
+}
+
+.rating {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
+background-color:#F2F2F2;
+}
+
+
+/*помню что ты говорил про звезды, что они потом как-то превратятся в то, что надо, а почему не надо вектор выгружать для каждой звезды? пока что я просто сделала их голубыми)*/
+.star {
+  color: #83B3D3;
+}
+
+.pagination-link-pagination-current {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color:#F2F2F2;
+}
+
+.pagination-link {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color:#82B3D3;
+}
+
+.subscription-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.spam-catalog {
+  font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #000000;
+}
+
+.contact-phone-text{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
