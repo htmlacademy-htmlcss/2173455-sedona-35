@@ -79,62 +79,29 @@ text-align: center;
     line-height: 21px;
   }
 
-
-/*.background-basic{
-  background-color:#82B3D3;
-  color: #FFFFFF;
-  background-repeat: repeat;
-  position: absolute;
-}
-
-.background-second-one{
-  background-color:#83B3D3;
-  color: #000000;
-  background-repeat: repeat;
-  position: absolute;
-}
-
-.background-second-two{
-  background-color:#83B3D3;
-  color: #000000;
-  background-repeat: repeat;
-  position: absolute;
-}
-
-.background-none{
-  background-color: none;
-  color: #000000;
-  background-repeat: repeat;
-  position: absolute;
-}*/
-
 .advantages-list li:nth-child(1),
 .advantages-list li:nth-child(5){
   background-color:#82B3D3;
   color: #FFFFFF;
   background-repeat: repeat;
-  position: absolute;
 }
 
 .advantages-list li:nth-child(2n){
   background-color:#83B3D3;
   color: #000000;
   background-repeat: repeat;
-  position: absolute;
 }
 
 .advantages-list li:nth-child(3){
   background-color:#83B3D3;
   color: #000000;
   background-repeat: repeat;
-  position: absolute;
 }
 
 .advantages-list li:nth-child(7){
   background-color: none;
   color: #000000;
   background-repeat: repeat;
-  position: absolute;
 }
 
 .dates {
@@ -165,7 +132,7 @@ background-color: #FFFFFF;
 
 .subscription{
   color: #FFFFFF;
-   background-image: url('../images/subscription-picture.jfif');
+   background-image: url('../images/subscription-picture.jpg');
    background-color: #756157;
    background-repeat: no-repeat;
    background-size: 100% auto;
@@ -209,7 +176,7 @@ text-transform: uppercase;
 
 .catalog-filters{
   color: #FFFFFF;
-  background-image: url('../images/catalog-filters-picture.jfif');
+  background-image: url('../images/catalog-filters-picture.jpg');
   background-color: #756157;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -334,13 +301,9 @@ color: #333333;
 background-color:#F2F2F2;
 }
 
-
-/*помню что ты говорил про звезды,
-что они потом как-то превратятся в то,
-что надо, а почему не надо вектор выгружать для каждой звезды?
- пока что я просто сделала их голубыми)*/
 .star {
   color: #83B3D3;
+  background-image: url('../images/star.svg');
 }
 
 .pagination-link-pagination-current {
