@@ -1,3 +1,354 @@
-body{
-background-color:;
+@font-face{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ptsans-400.woff2') format('woff2');
+  font-display: swap;
+}
+
+/**/
+
+@font-face{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ptsans-700.woff2') format('woff2');
+  font-display: swap;
+}
+
+html{
+  background:#F2F2F2;
+}
+
+body {
+  font-family: "PT Sans", "Arial",sans-serif;
+font-size: 16px;
+line-height: 24px;
+font-style: normal;
+font-weight: 400;
+}
+
+
+.page-header{
+  color:#000000;
+  background:#FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.main-index{
+  color: #000000;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.sedona {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sedona-description{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages{
+text-align: center;
+}
+
+.advantages-title{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+}
+
+.advantages-description{
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+.advantages-list li:nth-child(1),
+.advantages-list li:nth-child(5){
+  background-color:#82B3D3;
+  color: #FFFFFF;
+  background-repeat: repeat;
+}
+
+.advantages-list li:nth-child(2n){
+  background-color:#83B3D3;
+  color: #000000;
+  background-repeat: repeat;
+}
+
+.advantages-list li:nth-child(3){
+  background-color:#83B3D3;
+  color: #000000;
+  background-repeat: repeat;
+}
+
+.advantages-list li:nth-child(7){
+  background-color: none;
+  color: #000000;
+  background-repeat: repeat;
+}
+
+.dates {
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.interest{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-search {
+  background-color: #756157;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscription{
+  color: #FFFFFF;
+   background-image: url('../images/subscription-picture.jpg');
+   background-color: #756157;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+.subscription-index{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.spam-index {
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.newsletter-button {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-footer{
+  background-color: #FFFFFF;
+}
+
+.footer-contact{
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+}
+
+.catalog-filters{
+  color: #FFFFFF;
+  background-image: url('../images/catalog-filters-picture.jpg');
+  background-color: #756157;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.inner-header-title {
+font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color: #FFFFFF;}
+
+.breadcrumbs-link {
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+}
+
+.catalog-filter-title{
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+
+.control{
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.button-submit{
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #82B3D3;
+}
+
+.button-reset{
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: none;
+}
+
+.search-catalog {
+  background-color: #FFFFFF;
+}
+
+.found {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.select-control{
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+
+.product-card-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.product-card-price {
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.product-card-button-info {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+
+.product-card-button-add {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color:#82B3D3;
+}
+
+.product-card-button-added {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color:#7DB54F;
+}
+
+.rating {
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
+background-color:#F2F2F2;
+}
+
+.star {
+  color: #83B3D3;
+  background-image: url('../images/star.svg');
+}
+
+.pagination-link-pagination-current {
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color:#F2F2F2;
+}
+
+.pagination-link {
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color:#82B3D3;
+}
+
+.subscription-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.spam-catalog {
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #000000;
+}
+
+.contact-phone-text{
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
 }
