@@ -75,7 +75,7 @@
           <div class="filter">
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
 
                 <ul class="catalog-filter-list">
@@ -103,7 +103,7 @@
 
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-type-of-housing">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
 
                 <ul class="catalog-filter-list">
@@ -128,11 +128,55 @@
                     </label>
                   </li>
                 </ul>
-
               </fieldset>
 
-              <button class="button-submit button" type="submit">Применить</button>
-              <button class="button-reset button" type="reset">Сбросить</button>
+
+
+
+
+
+
+
+              <fieldset class="catalog-filter-group catalog-filter-group-price">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+
+                <div class="range">
+
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input class="range-input-min" type="number" value="0" value="от" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input-max" type="number" value="9000" value="до" name="max-price"
+                        style="width: 37px">
+                    </label>
+                  </div>
+
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 42px; width: 136px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+
+
+
+
+
+
+
+              <li class="buttons-submit-reset">
+                <button class="button-submit button" type="submit">Применить</button>
+                <button class="button-reset button" type="reset">Сбросить</button>
+              </li>
             </form>
           </div>
         </div>
@@ -183,8 +227,13 @@
                   <span class="product-card-price">От 4000 ₽</span>
                 </p>
               </a>
+
+            <li class="buttons-info">
               <a class="product-card-button-info button" href="#">Подробнее</a>
               <a class="product-card-button-add button" href="#">В избранное</a>
+            </li>
+
+            <li class="ratings">
               <ul class="stars">
                 <li class="star"></li>
                 <li class="star"></li>
@@ -192,6 +241,7 @@
                 <li class="star"></li>
               </ul>
               <span class="rating">Рейтинг: 8,5</span>
+            </li>
             </li>
 
             <li class="product-card">
