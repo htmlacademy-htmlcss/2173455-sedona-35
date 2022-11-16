@@ -77,8 +77,6 @@ body {
   margin: 0 auto;
 }
 
-.navigation-logo {}
-
 .navigation-list {
   display: flex;
   margin: 0;
@@ -87,10 +85,6 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
 }
-
-/*.navigation-item {
-  display: inline;
-}*/
 
 .navigation-link {
   display: block;
@@ -104,8 +98,6 @@ body {
   text-transform: capitalize;
   padding: 20px 16px;
 }
-
-.navigation-user {}
 
 .navigation-user .navigation-link {
   min-width: 16px;
@@ -130,10 +122,6 @@ body {
   justify-content: space-between;
 }
 
-.footer-social {}
-
-/*удалить потом*/
-
 .footer-social-list {
   display: flex;
   width: 142px;
@@ -143,14 +131,6 @@ body {
   list-style-type: none;
 }
 
-.footer-social-item {}
-
-.button-vk {}
-
-.button-telegram {}
-
-.button-youtube {}
-
 .footer-contact {
   font-size: 40px;
   line-height: 40px;
@@ -159,8 +139,6 @@ body {
   display: flex;
 }
 
-.contacts-address {}
-
 .contact-phone-text {
   font-size: 40px;
   line-height: 40px;
@@ -168,8 +146,6 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
-
-.logo-html {}
 
 
 
@@ -238,12 +214,9 @@ body {
   box-sizing: border-box;
 }
 
-.advantage-title-recommendation::before{
-  width: 60px;
-  height: 2px;
-  content: '';
-  display: block;
-  margin: 30px auto 0;
+.advantage-title-recommendation{
+  margin-top: 30px;
+margin-bottom: 0px;
 }
 
 .advantage-title {
@@ -251,7 +224,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   width: 175px;
-  margin: 0;
+  margin-top: 30px;
 }
 
 .advantage-title::after {
@@ -514,8 +487,6 @@ body {
   margin-top: 0;
 }
 
-.catalog-filter-item {}
-
 .control {
   font-size: 18px;
   line-height: 23px;
@@ -523,25 +494,16 @@ body {
 
 }
 
-.control-input {
-}
-
-.range{
-
-}
-
 .range-scale {
   position: relative;
   height: 4px;
   margin-bottom: 16px;
-  background-color: #E6E6E6;
+  background-color:darkgrey;
 
 }
 
-/*как поменять расположение ползунков?*/
-
 .range-bar {
-  position: absolute;
+  position: sticky;
   height: 4px;
   background-color: #FFFFFF;
 }
@@ -580,15 +542,13 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: -10;
 }
 
 .toggle-max {
   top: -8px;
   right: -10px;
 }
-
-
 
 .range-wrapper-inputs {
   display: flex;
@@ -600,16 +560,22 @@ body {
   align-items: center;
 }
 
-/*не поняла как добавить от и до*/
-
 .catalog-filter-label {
   display: flex;
   margin-right: 2px;
-  /*width: 143px;*/
   justify-content: center;
   align-items: center;
 
 }
+
+.catalog-filter-label-label::after {
+
+  content: 'от';
+  color: darkgray;
+  position: absolute;
+}
+
+
 
 .range-input-min {
   width: 143px;
@@ -622,8 +588,28 @@ body {
   border-radius: 4px 0px 0px 4px;
 }
 
-/*я по всякому пыталась сделать range-input-max
-нужной ширины, но он не поддаётся, упорно остаётся таким мелким!*/
+/*.range-input-min::after {
+
+  height: 2px;
+  content: 'от';
+  display: block;
+  margin: 30px auto 0;
+
+  width: 17px;
+  min-height: 24px;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: darkgray;
+
+}*/
 
 .range-input-max {
   width: 143px;
@@ -651,6 +637,7 @@ body {
   box-sizing: border-box;
   min-height: 105px;
   padding-top: 35px;
+  list-style-type: none;
 }
 
 .button-submit {
@@ -688,8 +675,6 @@ body {
 
 }
 
-.catalog-product {}
-
 .search-catalog {
   background-color: #FFFFFF;
 }
@@ -720,8 +705,6 @@ body {
   flex-grow: 1;
 }
 
-.sorting-select {}
-
 .select-control {
   font-size: 18px;
   line-height: 21px;
@@ -730,12 +713,6 @@ body {
   min-height: 49px;
   margin-right: 70px;
 }
-
-.popular {}
-
-.cheap {}
-
-.expensive {}
 
 .sorting-buttons {
   display: flex;
@@ -759,11 +736,16 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   padding: 0;
   border-bottom: 1px solid rgba(230, 230, 230, 1);
   gap: 20px;
+
+  grid-template-columns: 340px 340px 340px;
+  grid-template-rows:    440px 440px 440px;
+
+  width: 1020px;
+  min-height: 1320px;
 }
 
 .product-card {
@@ -776,10 +758,6 @@ body {
   min-height: 438px;
   border-radius: 4px;
 }
-
-.product-card-link {}
-
-.product-card-image {}
 
 .product-card-title {
   font-weight: 700;
@@ -803,11 +781,6 @@ body {
   margin-left: 0;
 }
 
-/*тут я объединила по две кнопки, но они сбежали из карточки
- и как бы я не меняла высоту, ширину
- (думала вдруг им мало места как флексам в карточке),
- но они не хотят возвращаться обратно*/
-
 .buttons-info {
   display: flex;
   width: 300px;
@@ -816,7 +789,7 @@ body {
   box-sizing: border-box;
   min-height: 36px;
   justify-content: space-between;
-
+  margin-bottom: 16px;
 }
 
 .product-card-button-info {
@@ -871,8 +844,6 @@ body {
   justify-content: center;
 }
 
-/*и тут я тоже объединила звезды с рейтингом и произошла та же история. сбежали*/
-
 .ratings {
   display: flex;
   width: 300px;
@@ -908,7 +879,6 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
-  /*display: flex;*/
   width: 140px;
   border: #F2F2F2;
   min-height: 37px;
@@ -934,7 +904,6 @@ body {
 
 .pagination-item {
   width: 60px;
-  min-height: 60px;
   margin-right: 8px;
 }
 
@@ -978,7 +947,6 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   justify-content: center;
-  min-height: 59px;
   border: 1px rgba(255, 255, 255, 1);
   border-radius: 4px;
 }
@@ -1011,13 +979,9 @@ body {
   color: #000000;
 }
 
-.newsletter-form {}
-
 .field-catalog {
   width: 452px;
   height: 52px;
   border: #F2F2F2;
   background-color: #F2F2F2;
 }
-
-.newsletter-button {}
