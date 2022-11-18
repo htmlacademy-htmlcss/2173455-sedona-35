@@ -56,13 +56,22 @@ body {
   overflow: hidden;
 }
 
+.button {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
 
 /*HEADER*/
 
 .logo-sedona {
   display: block;
   margin: 0 auto;
-
 }
 
 .page-header {
@@ -81,9 +90,13 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 775px;
+  width: 507px;
   flex-wrap: wrap;
   list-style-type: none;
+}
+
+.navigation-list-left{
+  margin-left: 28px;
 }
 
 .navigation-link {
@@ -92,6 +105,7 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: 700;
+  font-size: 20px;
   text-align: center;
   background-color: #FFFFFF;
   text-decoration: none;
@@ -99,10 +113,54 @@ body {
   padding: 20px 16px;
 }
 
-.navigation-user .navigation-link {
+/*.navigation-user .navigation-link {
   min-width: 16px;
   min-height: 22px;
+}*/
+
+
+.navigation-user {
+  max-width: 270px;/*275  это с запасом вместо 268*/
+  margin-left: auto;
 }
+
+.heart {
+  position: relative;
+}
+
+.likes{
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+
+.navigation-button{
+  background-color: #756157;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  min-height: 36px;
+  border: #756157;
+  border-radius: 4px;
+  padding: 8px 34px;
+  margin-top: 14px;
+}
+
+
 
 
 /*FOOTER*/
@@ -145,6 +203,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
+  font-style: normal;
 }
 
 
@@ -178,12 +238,14 @@ body {
   text-transform: uppercase;
   color: #000000;
   width: 630px;
+  margin-top: 65px;
 }
 
 .sedona-description {
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 90px;
+  margin-top: 5px;
 }
 
 .advantages {
@@ -214,17 +276,12 @@ body {
   box-sizing: border-box;
 }
 
-.advantage-title-recommendation{
-  margin-top: 30px;
-margin-bottom: 0px;
-}
-
 .advantage-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  width: 175px;
-  margin-top: 30px;
+  width: 172px;
+  margin-top: 0px;/*вот тут я очтановилась подгонять под пиксели*/
 }
 
 .advantage-title::after {
@@ -240,6 +297,10 @@ margin-bottom: 0px;
   background: rgba(255, 255, 255, 0.3);
 }
 
+.advantage-title-white{
+  margin-top: 10px;
+}
+
 .advantage-title-white::after {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -251,9 +312,15 @@ margin-bottom: 0px;
   margin: 0;
 }
 
+.advantage-description-white{
+  margin-bottom: 10px;
+  width: 230px;
+}
+
 .tile-list-item {
   color: #000;
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 0;
 }
 
 .tile-list-item--wide {
@@ -267,6 +334,23 @@ margin-bottom: 0px;
 
 .tile-list-item:nth-child(7) {
   background-color: transparent;
+}
+
+/*.tile-list-item-recommendation {
+  min-height: 384px;
+}*/
+
+.food {
+  padding-bottom: 5px;
+}
+
+.advantage-title-recommendation{
+  margin-top: 15px;
+margin-bottom: 0px;
+}
+
+.advantage-description-recommendation{
+  margin-bottom: 0;
 }
 
 .interest {
@@ -312,10 +396,11 @@ margin-bottom: 0px;
   font-size: 20px;
   line-height: 36px;
   width: 376px;
-  min-height: 52px;
+  min-height: 50px;
   border: #756157;
   border-radius: 4px;
-
+  text-decoration: none;
+  padding: 8px;
 }
 
 .subscription {
@@ -558,58 +643,44 @@ margin-bottom: 0px;
   box-sizing: border-box;
   flex-direction: row;
   align-items: center;
+
 }
 
 .catalog-filter-label {
   display: flex;
   margin-right: 2px;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 
 }
 
-.catalog-filter-label-label::after {
-
-  content: 'от';
+.catalog-filter-label::after {
   color: darkgray;
   position: absolute;
 }
 
+.catalog-filter-label--from:after {
+  content: 'от';
+  margin-right: 20px;
+}
 
+.catalog-filter-label--to:after {
+  content: 'до';
+  margin-right: 20px;
+}
 
 .range-input-min {
   width: 143px;
   min-height: 48px;
   padding: 0;
   font: inherit;
-  text-align: center;
+  text-align: left;
   background-color: #FFFFFF;
   border: none;
   border-radius: 4px 0px 0px 4px;
+  padding-left: 20px;
+
 }
-
-/*.range-input-min::after {
-
-  height: 2px;
-  content: 'от';
-  display: block;
-  margin: 30px auto 0;
-
-  width: 17px;
-  min-height: 24px;
-
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-
-  display: flex;
-  align-items: center;
-  text-align: right;
-  color: darkgray;
-
-}*/
 
 .range-input-max {
   width: 143px;
@@ -620,6 +691,8 @@ margin-bottom: 0px;
   background-color: #FFFFFF;
   border: none;
   border-radius: 0px 4px 4px 0px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -712,7 +785,20 @@ margin-bottom: 0px;
   width: 292px;
   min-height: 49px;
   margin-right: 70px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 0 20px;
 }
+
+/*.popular {
+  margin-left: 20px;
+}
+.cheap {
+  margin-left: 20px;
+}
+.expensive {
+  margin-left: 20px;
+}*/
 
 .sorting-buttons {
   display: flex;
@@ -746,6 +832,7 @@ margin-bottom: 0px;
 
   width: 1020px;
   min-height: 1320px;
+
 }
 
 .product-card {
@@ -757,6 +844,7 @@ margin-bottom: 0px;
   width: 340px;
   min-height: 438px;
   border-radius: 4px;
+
 }
 
 .product-card-title {
@@ -860,7 +948,7 @@ margin-bottom: 0px;
   width: 140px;
   list-style-type: none;
   min-height: 37px;
-
+  padding: 10px;
 }
 
 .star {
@@ -920,6 +1008,9 @@ margin-bottom: 0px;
   min-height: 59px;
   border: 1px rgba(242, 242, 242, 1);
   border-radius: 4px;
+  padding-top: 11px;
+
+
 }
 
 .pagination-link {
@@ -935,6 +1026,9 @@ margin-bottom: 0px;
   min-height: 59px;
   border: 1px rgba(130, 179, 211, 1);
   border-radius: 4px;
+  text-decoration: none;
+  padding-top: 11px;
+
 }
 
 .pagination-link-pagination-points {
@@ -949,6 +1043,9 @@ margin-bottom: 0px;
   justify-content: center;
   border: 1px rgba(255, 255, 255, 1);
   border-radius: 4px;
+  text-decoration: none;
+padding-top: 11px;
+
 }
 
 .subscription-double {
