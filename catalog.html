@@ -15,7 +15,7 @@
           <img class="logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип «sedona».">
         </a>
 
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-list-left navigation-list-right">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -23,27 +23,30 @@
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current navigation-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <form class="navigation-link" action="https://echo.htmlacademy.ru">
+            <form action="https://echo.htmlacademy.ru">
               <!--<label>
                     Поиск
                     <input type="search" name="search" required>
                   </label>-->
-              <img class="logo" src="images/search.svg" width="20" height="20" alt="поиск">
+              <a class="navigation-link navigation-link--logo" href="#">
+                <img class="logo" src="images/search.svg" width="20" height="20" alt="поиск"></a>
             </form>
+          </li>
 
-          </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Понравилось</span>
-              <img src="images/heart.svg" width="18" height="17" alt="heart"></a>
+            <a class="navigation-link navigation-link--logo" href="#"><span class="visually-hidden">Понравилось</span>
+              <img class="logo" src="images/heart.svg" width="18" height="18" alt="heart">
+              <span class="likes">12</span></a>
           </li>
+
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link navigation-button button" href="#">Хочу сюда!</a>
           </li>
 
         </ul>
@@ -52,6 +55,8 @@
 
 
     <main class="main-catalog main-container">
+
+
       <section class="catalog-filters">
         <div class="container">
           <div class="header-filter">
@@ -81,21 +86,21 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="terms" value='pool' checked>
+                      <input class="control-input control-input-pool" type="checkbox" name="terms" value='pool' checked>
                       Бассейн
                     </label>
                   </li>
 
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="terms" value="parking" checked>
+                      <input class="control-input control-input-parking" type="checkbox" name="terms" value="parking" checked>
                       Парковка
                     </label>
                   </li>
 
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="terms" value="wi-fi">
+                      <input class="control-input control-input-wi-fi" type="checkbox" name="terms" value="wi-fi">
                       Wi-Fi
                     </label>
                   </li>
@@ -109,21 +114,21 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type" value="economy-hotel" checked>
+                      <input class="control-input control-input-economy-hotel" type="radio" name="type" value="economy-hotel" checked>
                       Гостиница
                     </label>
                   </li>
 
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type" value="motel">
+                      <input class="control-input control-input-motel" type="radio" name="type" value="motel">
                       Мотель
                     </label>
                   </li>
 
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type" value="apartments">
+                      <input class="control-input control-input-apartments" type="radio" name="type" value="apartments">
                       Апартаменты
                     </label>
                   </li>
@@ -145,12 +150,12 @@
 
                   <div class="range-wrapper-inputs">
 
-                    <label class="catalog-filter-label">
+                    <label class="catalog-filter-label catalog-filter-label--from">
                       <input class="range-input-min" type="number" value="0" name="min-price">
                       <!--<span class="control-input-label">от</span>-->
                     </label>
 
-                    <label class="catalog-filter-label">
+                    <label class="catalog-filter-label catalog-filter-label--to">
                       <input class="range-input-max" type="number" value="9000" value="до" name="max-price">
                       <!--<span class="control-input-label">до</span>-->
                     </label>
@@ -179,7 +184,7 @@
 
               <ul class="buttons-submit-reset">
                 <li>
-                  <button class="button-submit button" type="submit">Применить</button>
+                  <a class="button" href="#"><button class="button-submit button" type="submit">Применить</button></a>
                 </li>
                 <li>
                   <button class="button-reset button" type="reset">Сбросить</button>
@@ -230,6 +235,7 @@
               <a class="product-card-link" href="product.html">
                 <img class="product-card-image" src="images/amara-resort-spa.jpg" width="300" height="212" alt="amara">
                 <p class="product-card-title">Amara Resort & Spa</p>
+
                 <p class="product-card-type-hotel">
                   <span class="product-card-price">Гостиница</span>
                   <span class="product-card-price">От 4000 ₽</span>
@@ -357,13 +363,13 @@
 
       <section class="subscription-double">
         <h2 class="subscription-catalog">Подпишитесь на рассылку</h2>
-        <p class="spam-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="spam-catalog">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+        <form class="newsletter-form newsletter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email" class="visualy-hidden">Email</label>
           <input class="field-catalog" placeholder="Ваш e-mail" type="email" name="newsletter-email"
             id="newsletter-email" required>
-          <button class="newsletter-button button" type="submit">
-            <span>Подписаться</span>
+          <button class="newsletter-button button newsletter-button-catalog" type="submit">
+            <span class="subscribe-span">Подписаться</span>
           </button>
         </form>
       </section>
@@ -383,14 +389,14 @@
             </li>
 
             <li class="footer-social-item">
-              <a class="button-telegram" href="https://t.me/htmlacademy ">
+              <a class="button-telegram button-telegram-catalog" href="https://t.me/htmlacademy ">
                 <span class="visually-hidden">Телеграм</span>
                 <img src="images/telegram.svg" width="18" height="15.1" alt="telegram">
               </a>
             </li>
 
             <li class="footer-social-item">
-              <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="button-youtube button-youtube-catalog" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютьюб</span>
                 <img src="images/youtube.svg" width="22" height="17" alt="youtube">
               </a>
@@ -406,10 +412,11 @@
 
         <section>
           <a href="https://htmlacademy.ru/">
-            <img class="logo-html" src="images/html-academy.svg" width="114.9" height="32.9" alt=".html academy»».">
+            <img class="logo-html logo-html-catalog" src="images/html-academy.svg" width="114.9" height="32.9"
+              alt=".html academy»».">
           </a>
         </section>
-      </div>>
+      </div>
     </footer>
   </body>
 
