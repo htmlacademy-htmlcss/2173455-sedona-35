@@ -91,7 +91,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 507px;
   flex-wrap: wrap;
   list-style-type: none;
 }
@@ -106,6 +105,7 @@ body {
 
 .navigation-link {
   display: block;
+  position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 24px;
   color: #000000;
@@ -116,6 +116,12 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   padding: 20px 16px;
+  min-height: 24px;
+  min-width: 12px;
+}
+
+.navigation-link--logo {
+  box-sizing: unset;
 }
 
 .navigation-current{
@@ -130,18 +136,25 @@ body {
 }
 
 .navigation-user {
-  max-width: 280px;/*280  это с запасом вместо 268*/
   margin-left: auto;
 }
 
 .logo {
-  margin-right: 0p;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .heart {
   position: relative;
-  padding-right: 5px;
+  padding-right: px;
+  /*margin-left: 0;*/
   margin-left: 0;
+  margin-right: 25px;
+  padding-left: 0;
 }
 
 .likes{
@@ -155,8 +168,8 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 0;
-  margin-left: 5px;
+  right: 5px;
+  margin-left: 0;
   top: 10px;
 }
 
@@ -175,7 +188,7 @@ body {
   border-radius: 4px;
   padding: 8px 34px;
   margin-top: 14px;
-  margin-left: 28px;
+  margin-left: 20px;
 }
 
 
@@ -438,7 +451,7 @@ margin-bottom: 0px;
   align-items: center;
   padding: 66px 0 104px;
   box-sizing: border-box;
-  min-height: 415px;
+  min-height: 410px;
 }
 
 .subscription-index {
@@ -480,7 +493,7 @@ margin-bottom: 0px;
 .newsletter-button {
   background-color: #82B3D3;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
@@ -488,7 +501,11 @@ margin-bottom: 0px;
   width: 232px;
   border: #82B3D3;
   border-radius: 0 4px 4px 0;
+  padding-right: 30px;
+  padding-left: 30px;
 }
+
+
 
 .button-telegram-index{
   margin-left: 0;
@@ -499,10 +516,6 @@ margin-bottom: 0px;
   margin-left: 0;
   margin-right: 11px;
 }
-
-
-
-
 
 .logo-html-index {
   margin-top: 8px;
@@ -596,7 +609,7 @@ margin-bottom: 0px;
   margin: 0;
   align-items: center;
   /*flex-grow: 1;*/
-  margin-left: 70px;
+  margin-left: 65px;
   width: 1060px;
 }
 
@@ -610,27 +623,30 @@ margin-bottom: 0px;
 .catalog-filter-group-infrastructure{
   width: 160px;
   min-height: 157px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 0;
 }
 
-.control-input {
+.control {
+  margin-top: 0;
+}
 
+.control-input {
 }
 
 .catalog-filter-group-type-of-housing{
   width: 170px;
   min-height: 157px;
   /*margin-right: 140px;*/
-  margin-top: 20px;
-  margin-left: 70px;
+  margin-top: 30px;
+  margin-left: 68px;
 }
 
 .catalog-filter-group-price{
   width: 288px;
   min-height: 160px;
   /*padding-right: 70px;*/
-  margin-top: 35px;
+  margin-top: 39px;
   margin-left: 140px;
 }
 
@@ -647,18 +663,48 @@ margin-bottom: 0px;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  min-height: 101px;
+  /*min-height: 90px*/
 }
 
 .control {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-
 }
 
 .control-input {
-  margin-top: 16px;
+  margin-top: 5px;
+  margin-left: 13px;
+}
+
+.control-input-pool{
+  margin-bottom: 20px;
+  margin-left: 17px;
+}
+
+.control-input-parking{
+  margin-bottom: 20px;
+  margin-left: 17px;
+}
+
+.control-input-wi-fi {
+
+  margin-left: 17px;
+}
+
+.control-input-economy-hotel {
+  margin-bottom: 20px;
+  margin-left: 17px;
+}
+
+.control-input-motel{
+  margin-bottom: 20px;
+  margin-left: 17px;
+}
+
+.control-input-apartments {
+
+  margin-left: 17px;
 }
 
 .range-scale {
@@ -717,10 +763,11 @@ margin-bottom: 0px;
   right: -10px;
 }
 
+
 .range-wrapper-inputs {
   display: flex;
   width: 288px;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
   justify-content: space-between;
   box-sizing: border-box;
   flex-direction: row;
@@ -756,6 +803,8 @@ margin-bottom: 0px;
   min-height: 48px;
   padding: 0;
   font: inherit;
+  font-size: 18px;
+  font-weight: 700;
   text-align: left;
   background-color: #FFFFFF;
   border: none;
@@ -769,6 +818,8 @@ margin-bottom: 0px;
   min-height: 48px;
   padding: 0;
   font: inherit;
+  font-size: 18px;
+  font-weight: 700;
   text-align: center;
   background-color: #FFFFFF;
   border: none;
@@ -795,13 +846,13 @@ margin-bottom: 0px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: 95px;
-  margin-left: 70px;
+  margin-top: 90px;
+  margin-left: 65px;
 }
 
 .button-submit {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   display: flex;
   text-align: center;
@@ -815,12 +866,12 @@ margin-bottom: 0px;
   align-items: center;
   border-radius: 4px;
   margin-bottom: 32px;
-  padding: 0;
+  margin-left: 8px;
 }
 
 .button-reset {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   display: flex;
   text-align: center;
@@ -833,6 +884,7 @@ margin-bottom: 0px;
   justify-content: center;
   align-items: center;
   padding: 0;
+  margin-left: 8px;
 }
 
 .search-catalog {
@@ -840,15 +892,8 @@ margin-bottom: 0px;
   margin: 0 auto 0;
 }
 
-/* исправлю
-"Не стоит записывать отступ в 50px в общий класс container,
- класс должен оставаться максимально универсальным
-Отступы задавай конкретным секциям"*/
 .container {
   width: 1060px;
-  /*margin: 50px auto 0;*/
-    /*margin: 0 auto 0;*/
-
 }
 
 .sorting {
@@ -871,7 +916,7 @@ margin-bottom: 0px;
 }
 
 .select-control {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   color: #333333;
   width: 292px;
@@ -879,7 +924,7 @@ margin-bottom: 0px;
   margin-right: 70px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 /*.popular {
